@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Copy of testImageview.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>testButton copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>testButton.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>testImageView 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>testImageView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>testImageView1.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>testImageview.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>185956241C3F4F0C0054C4AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB1FCE0B1CF7171B00E29F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB1FCE1B1CF7176700E29F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB1FCE2E1CF7182B00E29F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB1FCE6C1CF718BE00E29F54</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
