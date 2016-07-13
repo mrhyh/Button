@@ -19,11 +19,6 @@
 
 @implementation ViewController
 
-#ifdef DEBUG
-- (void)injected{
-    [self viewDidLoad];
-}
-#endif
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -141,9 +136,6 @@
     [_aBtn addGestureRecognizer:longPress];
 
     
-    /**
-     设置边框
-     */
 #pragma mark 设置边框、圆角 这种情况就会有点击button，button变暗的效果
     UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(30, 300, 50, 50)];
     testButton.backgroundColor = [UIColor blueColor];
@@ -153,9 +145,10 @@
     [testButton setTitle:@"BBB" forState:UIControlStateNormal];
     [self.view addSubview:testButton];
     
-    UIButton *testButtonTwo = [[UIButton alloc] initWithFrame:CGRectMake(30, 400, 50, 50)];
-    [testButton setBackgroundImage:[UIImage imageNamed:@"right_menu_addFri"] forState:UIControlStateNormal];
-    [testButton setBackgroundImage:[UIImage imageNamed:@"right_menu_payMoney"] forState:UIControlStateSelected];
+    UIButton *testButtonTwo = [[UIButton alloc] initWithFrame:CGRectMake(30, 70, 50, 50)];
+    [testButtonTwo setImage:[UIImage imageNamed:@"right_menu_payMoney"] forState:UIControlStateNormal];
+    [testButtonTwo setImage:[UIImage imageNamed:@"right_menu_facetoface"] forState:UIControlStateSelected];
+    [testButtonTwo addTarget:self action:@selector(testButtonTwoAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:testButtonTwo];
     
 }
@@ -164,7 +157,13 @@
 
 #pragma mark ButtonClickAction
 
-- (void)btnShort{
+- (void ) testButtonTwoAction: (UIButton *)button {
+    button.selected = !button.selected;
+    
+    
+}
+
+- (void ) btnShort{
     NSLog(@"btnShort...");
         [_aBtn setFrame:CGRectMake(40, 100, 100, 100)];
 }
@@ -192,7 +191,9 @@
 }
 
 -(void)btnLong:(UILongPressGestureRecognizer*)gestureRecognizer{
+    
     if ([gestureRecognizer state] == UIGestureRecognizerStateBegan) {
+        
         NSLog(@"长按事件");
         UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"消息" message:@"确定删除该模式吗？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"删除", nil, nil];
         [alert show];

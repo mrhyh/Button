@@ -49,20 +49,12 @@
     label.layer.cornerRadius = 10;
     label.layer.masksToBounds = YES;
     [self.view addSubview:label];
-    
-    
-//    UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 20, 20)];
-//    testButton.titleLabel.text = @"09";
-//    testButton.backgroundColor = [UIColor grayColor];
-//    [testButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-//    testButton.layer.cornerRadius = 10;
-//    [self.view addSubview:testButton];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 @end
