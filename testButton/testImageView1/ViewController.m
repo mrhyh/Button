@@ -20,7 +20,7 @@
     UIImageView *imageView1 = [[UIImageView alloc] initWithFrame:CGRectMake(20, 200, 200 ,200)];
 //    imageView1.bounds = CGRectMake( 0,  0,  200, 200 );
     //imageView1.image = [UIImage imageNamed:@"2.jpg"];
-    [imageView1 setImage:[UIImage imageNamed:@"suitable.jpg"]];
+    [imageView1 setImage:[UIImage imageNamed:@"record"]];
     //imageView1.backgroundColor = [UIColor redColor];
     imageView1.contentMode = UIViewContentModeScaleToFill;
     //imageView1.contentMode = UIViewContentModeCenter;

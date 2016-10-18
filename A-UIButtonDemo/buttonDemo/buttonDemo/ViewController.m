@@ -21,7 +21,6 @@
 {
     [super viewDidLoad];
     
-    
     //---------------
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.tag = 11;
@@ -50,8 +49,6 @@
     [btn.titleLabel setBackgroundColor:[UIColor redColor]];
     btn.titleLabel.textAlignment   = NSTextAlignmentRight;
     
-    
-
     //btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;    //AlignmentType Left
     [btn addTarget:self action:@selector(titleChanged:) forControlEvents:UIControlEventTouchUpInside];
     
